@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Product>
+
+<section class="collection-grid">
+    <div class="container">
+        @*<div class="title">@title</div>*@
+        <div class="item-collection">
+            @if (Model != null)
+            {
+                foreach (Product product in Model)
+                {
+                    <partial name="_CollectionItemPartial" model="product" />
+                }
+            }
+            else
+            {
+                <p>No products found.</p>
+            }
+        </div>
+    </div>
+</section>
