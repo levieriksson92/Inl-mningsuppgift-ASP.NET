@@ -42,7 +42,7 @@ namespace Inlämningsuppgift_ASP.NET.Services
         {
             using var httpClient = new HttpClient();
             return await httpClient.PostAsJsonAsync(
-                _api.ApiAddressRoot($"/products/add?x-api-key={_api.ApiKey()}"), product);
+                _api.ApiAddressRoot($"/Product/add?x-api-key={_api.ApiKey()}"), product);
         }
     }
 }

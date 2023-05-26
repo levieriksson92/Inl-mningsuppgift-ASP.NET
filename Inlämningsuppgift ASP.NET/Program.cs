@@ -29,8 +29,4 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-//krashar, instance of an object, entity = null
-//app.MapControllerRoute(
-//    name: "ProductDetails",
-//    pattern: "{controller=Product}/{action=ProductDetails}/{id?}");
 app.Run();

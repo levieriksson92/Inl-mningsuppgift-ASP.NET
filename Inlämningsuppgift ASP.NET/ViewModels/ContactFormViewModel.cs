@@ -15,9 +15,9 @@ namespace Inlämningsuppgift_ASP.NET.ViewModels
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; } = null!;
 
-        [Display(Name = "Comments")]
-        [Required(ErrorMessage = "Please enter a comment")]
-        public string CommentsText { get; set; } = null!;
+        [Display(Name = "Message")]
+        [Required(ErrorMessage = "Please enter a message")]
+        public string ContactFormText { get; set; } = null!;
 
 
         public static implicit operator ContactFormDto(ContactFormViewModel model)
@@ -26,7 +26,7 @@ namespace Inlämningsuppgift_ASP.NET.ViewModels
             {
                 Name = model.Name,
                 Email = model.Email,
-                CommentsText = model.CommentsText
+                ContactFormText = model.ContactFormText
             };
         }
     }
