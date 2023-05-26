@@ -27,6 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Databases\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
